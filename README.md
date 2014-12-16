@@ -1,4 +1,4 @@
 ASM-GameOfLife
 ==============
 
-Conway's Game of Life written in C and NASM
+Conway's Game of Life (C, NASM)
