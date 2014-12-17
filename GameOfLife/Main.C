@@ -17,7 +17,7 @@
 #define BYTE unsigned char
 #define CHECK_BIT(var,pos) ((var) & (1<<(pos)))
 
-// Function used to store data used in graphical mode. Most of this structure is taken from the file "VBETEST.C".
+// Function used to store data used in graphical mode.
 typedef struct {
   unsigned ModeAttributes;
   unsigned granularity,startseg,farfunc;
@@ -40,7 +40,7 @@ char array[12];
 int x = 800;
 int y = 600;
 
-// Function used to get data used in graphical mode. Most of this function is taken from the file "VBETEST.C".
+// Function used to get data used in graphical mode.
 ModeInfoBlock *get_mode_info(int mode)
 {
         static ModeInfoBlock info;
@@ -57,7 +57,7 @@ ModeInfoBlock *get_mode_info(int mode)
         return &info;
 }
 
-// Function used to initiate the graphics. Most of this function is taken from the file "VBETEST.C".
+// Function used to initiate the graphics.
 void init_graphics(void)
 {
         __dpmi_meminfo info;
